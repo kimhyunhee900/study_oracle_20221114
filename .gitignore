@@ -1,7 +1,5 @@
 # 제외할 파일 목록
 
-*.txt
-*.hwp
 *.xls
 *.xlsm
 *.xlsx

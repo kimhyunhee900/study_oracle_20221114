@@ -1,0 +1,50 @@
+<< Git & Github >>
+
+- Git : 분산 버전 관리 시스템 (like. SVN - 버전관리 프로그램 1세대?)
+- Github : Git을 지원하는 원격 저장소, 호스팅 서비스 제공 플랫폼   vs  Bitbucket, Gitlab, ...
+
+1.Git 사용
+  - https://git-scm.com  에서 [git Client for windows] 다운로드 및 프로그램 설치 (=기본값)
+
+2. Github 계정생성, 로그인
+  - 실습에 사용할 원격 repository를 만들고, 로컬 저장소와 연동해서 버전관리 시작
+  - 호스팅 서비스도 제공
+
+   내 PC 저장소       |    중간 대기장소?             |    원격 저장소
+   Working Tree      |     (Index) Staging Area     |    Repository (=Repo)  <-- 99.9999% origin 이라는 별명
+   d:\git-test          |     (=메모리상 존재)         |    https://github.com/계정명/repository명
+                                                                 |   https://계정명.github.io/repository명   [Setting 변경]        
+---------------------------------------------------------------------------------------------------------
+    hello.java                     hello.java
+                  git add hello.java                              git remote add origin [https://~~.git]           
+                  git commit -m "first java"                    (1) 깃헙 로그인  (2) repository 생성 후
+                                                     git push origin master
+                                                                                (main)   <-- 흑인 인권운동 영향 탓..
+--------------------------------------------------------------------------------------------------------
+
+ 3. workflow
+
+   프로젝트 시작(=workspace) --> 작업 --> [버전관리] Git!
+          d:\my-project                 intro.java           ==> .git/ 오늘 누가 뭐를 언제 어떻게 했어~ 
+                                              index.html                       오늘 누가 뭐를 언제 어떻게 했어~ 
+                                              style.css                          오늘 누가 뭐를 언제 어떻게 했어~ 
+                                                  ...                                          ...
+
+ --> 개발진행
+  집 -->   한울 --> 카페 ---> 집 ---> 한울 
+        pull          pull
+ 로컬 <--> 원격 <--> 기타 장소                     :    그래픽 기반 Git Client (SourceTree, GithubDesktop)
+        push        push
+ <-------------- 명령 기반(CLI) ------------------> vs <--------------------------- 그래픽기반(GUI)----------->
+
+
+
+
+
+
+
+
+
+
+
+  
