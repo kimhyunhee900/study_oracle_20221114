@@ -1,0 +1,22 @@
+:: 오라클 클라우드 인프라스트럭쳐
+
+1) 회원가입
+   - 회원가입 단계등은 따로 웹문서에 포함되어 있지 않음
+   https://oracle.com/cloud
+   ※ 인증 이메일 수신 후 Verify, Pay (=카드 등록, MASTER / VISA / UNION PAY)
+
+
+2) 로그인
+
+  sign to Oracle CLOUD
+  ※ 로그인 시 대체 이름은 이메일이 user@hanul.com 일때 user에 해당하므로 로그인시 유의!!
+       
+
+3) ATP 설정
+
+   - Autonomous DB 설정
+   
+
+※ 세부 과정은 아래 웹문서를 참고하세요
+※ 변경될 수 있는 부분이 있으므로, 추가할 부분 모두 완성하면 PDF 문서로 제공예정  
+https://seonyeonghun.notion.site/seonyeonghun/OCI-51086b5293b9481baa7a18dfe5bc072e
