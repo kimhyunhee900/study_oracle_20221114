@@ -69,5 +69,50 @@ order by 1;
 
 
 
+select employee_id, first_name, salary, commission_pct bonus, department_id
+from employees, departments
+where department_id = department_id
+and commission_pct is not null
+order by 1;
+
+
+DESC EMPLOYEE_ID
+FROM DUAL;
+
+SELECT E.EMPLOYEE_ID, E.FIRST_NAME, E.DEPARTMENT_ID, D.DEPARTMENT_NAME, L.LOCATION_ID, L.CITY
+FROM EMPLOYEES E, DEPARTMENTS D, LOCATIONS L
+WHERE E. DEPARTMENT_ID = D.DEPARTMENT_ID
+AND D.LOCATION_ID = L.LOCATION_ID
+ORDER BY 1;
+
+SELECT E.EMPLOYEE_ID, E.FIRST_NAME, E.DEPARTMENT_ID, D.DEPARTMENT_NAME, L.LOCATION_ID, L.CITY
+FROM EMPLOYEES E INNER JOIN DEPARTMENTS D
+ON D.DEPARTMENT_ID = D.DEPARTMENT_ID
+INNER JOIN LOCATIONS L
+ON D.LOCATION_ID = L.LOCATION_ID
+ORDER BY 1;
+
+SELECT e.employee_id, e.first_name, d.department_id, d.department_name
+from employees e, departments d
+where e.department_id=d.department_id(+)
+order by 1;
+
+SELECT e.employee_id, e.first_name, d.department_id, d.department_name
+from employees e outer join departments d
+on e.department_id=d.department_id
+where e.manager_id is not null
+order by 1;
+
+
+select e.employee_id, e.first_name, d.department_name
+from employees e, departments d
+where e.employee_id=d.department_id
+and employee_id in(110,130,150);
+
+
+select e.employee_id, e.first_name, d.department_name
+from employees e inner join departments d
+on e.employee_id=d.department_id
+and employee_id in(110,130,150);
 
 
